@@ -1,0 +1,11 @@
+<h1>Restaurants#index</h1>
+<ul>
+    <% @restaurants.each do |restaurant| %>
+        <li>Name: <%= restaurant.name %></li>
+        <li>Address: <%= restaurant.address %></li>
+        <li>Rating: <%= "⭐️" * restaurant.rating %></li>
+        <br>
+        <br>
+    <% end %>
+</ul>
+<p>Find me in app/views/restaurants/index.html.erb</p>
