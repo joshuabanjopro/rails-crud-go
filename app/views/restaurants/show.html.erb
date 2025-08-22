@@ -3,4 +3,6 @@
 <h3><%= @restaurant.address %></h3>
 
 <h2>Don't just take our word for it! Our customers love us so much they've rated us as <%= "⭐️" * @restaurant.rating %></h2>
+
+<p><%= link_to "Delete 4eva", restaurant_path(@restaurant), data: { turbo_method: :delete, turbo_confirm: "Are you sure?"} %></p>
 <p>Find me in app/views/restaurants/show.html.erb</p>

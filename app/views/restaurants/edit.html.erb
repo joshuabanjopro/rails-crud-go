@@ -1,2 +1,9 @@
-<h1>Restaurants#edit</h1>
+<h1>Help us maintain an up to date directory :D</h1>
+
+<%= simple_form_for @restaurant do |f| %>
+    <%= f.input :name %>
+    <%= f.input :rating %>
+    <%= f.input :address %>
+    <%= f.submit "Update this restaurant!" %>
+<% end %>
 <p>Find me in app/views/restaurants/edit.html.erb</p>
